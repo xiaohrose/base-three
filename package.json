@@ -1,11 +1,12 @@
 {
     "name": "base-three-mp",
-    "version": "1.0.2",
+    "version": "1.1.0",
     "description": "",
     "main": "./dist/index.js",
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1",
-        "build": "tsc"
+        "build": "tsc",
+        "release": "standard-version"
     },
     "bin": "/bin/base-three.js",
     "files": [
@@ -21,5 +22,8 @@
     "keywords": [],
     "author": "",
     "license": "ISC",
-    "packageManager": "pnpm@10.12.1"
+    "packageManager": "pnpm@10.12.1",
+    "dependencies": {
+        "standard-version": "^9.5.0"
+    }
 }
