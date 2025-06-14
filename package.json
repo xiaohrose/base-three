@@ -1,6 +1,6 @@
 {
     "name": "base-three-mp",
-    "version": "1.0.0",
+    "version": "1.0.2",
     "description": "",
     "main": "./dist/index.js",
     "scripts": {
@@ -8,6 +8,16 @@
         "build": "tsc"
     },
     "bin": "/bin/base-three.js",
+    "files": [
+        "/dist",
+        "/bin",
+        "/template"
+    ],
+    "publishConfig": {
+        "ignore": [
+            "src"
+        ]
+    },
     "keywords": [],
     "author": "",
     "license": "ISC",
