@@ -16,7 +16,8 @@
     ],
     "publishConfig": {
         "ignore": [
-            "src"
+            "src",
+            "node_modules"
         ]
     },
     "keywords": [],
