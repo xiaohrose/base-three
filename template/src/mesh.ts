@@ -1,20 +1,8 @@
 import * as THREE from 'three';
 
-const group = new THREE.Group();
 
-function createBox(color: any, x: any) {
-    const geometry = new THREE.BoxGeometry(100, 100, 100);
-    const material = new THREE.MeshPhongMaterial({
-        color: color
-    });
-    const mesh = new THREE.Mesh(geometry, material);
-    mesh.position.x = x;
-    mesh.name = color;
-    return mesh;
-}
-
-group.add(createBox('red', 0));
-group.add(createBox('blue', 300));
-group.add(createBox('green', -300));
-
-export default group;
+export default ({ scene }: any) => {
+    const camera2 = new THREE.PerspectiveCamera(20, 16 / 9, 100, 300);
+    const cameraHelper = new THREE.CameraHelper(camera2);
+    scene.add(cameraHelper);
+};
