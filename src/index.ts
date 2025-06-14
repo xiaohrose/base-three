@@ -2,7 +2,7 @@ import * as fs from 'fs';
 import * as path from 'path';
 
 const sourceDir = path.resolve(__dirname, '../template');
-const targetDir = path.resolve(__dirname);
+const targetDir = path.resolve(process.cwd());
 
 // Function to copy files and directories recursively
 function copyFolderSync(source: string, target: string) {
